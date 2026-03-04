@@ -6,7 +6,7 @@ body {
 .navbar { background:#000; color:#fff; padding:15px; }
 .nav-container { display:flex; justify-content:space-between; align-items:center; }
 .nav-links { list-style:none; display:flex; gap:20px; }
-.nav-links li a { color:#fff; text-decoration:none; }
+.nav-links li a { color:gold; text-decoration:none; }
 .menu-toggle { display:none; cursor:pointer; }
 
 a:hover{ background-color: green;}
@@ -28,7 +28,7 @@ font-weight: bold;}
 
 @media(max-width:768px){
   .nav-links { display:none; flex-direction:column; }
-  .menu-toggle { display:block; }
+  .menu-toggle { display:block;}
 }
 .good{
 
@@ -70,6 +70,59 @@ line-height: 20px;}
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+.waybill {
+    background: #111;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.waybill h2 {
+    color: gold;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.waybill p {
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 16px;
+}
+
+.states {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.state {
+    background: gold;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.state:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+.highlight {
+    font-weight: bold;
+    color: gold;
+    margin-top: 20px;
+}
+
+.brand{
+  color:gold;
 }
 
 }
