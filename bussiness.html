@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGU GLOBAL ENTERPRISE</title>
+  <link rel="stylesheet" href="bussiness.css">
+  <link rel="stylesheet" href="bussiness.html">
+  
+
+
+<body>
+  
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+    <div class="hero-content">
+      <img src="logo.PNG" alt="AGU Logo" class="logo">
+
+      <h1>AGU NIGERIA ENTERPRISE</h1>
+      <p id="text">Your Trusted Kitchen & Home Essentials Store</p>
+      
+    </div>
+  </section>
+
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="brand">AGU NIGERIA ENTERPRISE</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="bussiness.html">Home</a></li>
+      <li><a href="agu.html">About Us</a></li>
+      <li><a href="store.html">Contact and location</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+</nav>
+
+
+  <!-- Products Section -->
+  <section class="products">
+    <h2>Our Products</h2>
+    
+    <div class="product-grid">
+      <div class="product" ><img src="granite.jpg" width="190px" height="200px"><p>Non Stick Pot</p></div>
+      <div class="product"><img src="tower.jpg" width="190px" height="200px"><p>Tower Pots</p></div>
+      <div class="product"><img src="cooker.jpg" width="190px" height="200px"><p>Gas Cooker</p></div>
+      <div class="product"><img src="cylinder.jpg" width="190px" height="200px"><p>Gas Cylinder</p></div>
+      <div class="product"><img src="bleender.jpg" width="190px" height="200px"><p>Blender</p></div>
+      <div class="product"><img src="yam.jpg" width="190px" height="200px"><p>Yam Pounder</p></div>
+      <div class="product"><img src="air.jpg" width="190px" height="200px"><p>Air Fryer</p></div>
+      <div class="product"><img src="mircowave.jpg" width="190px" height="200px"><p>Microwave</p></div>
+      <div class="product"><img src="plates.jpg" width="190px" height="200px"><p>Dinner Set</p></div>
+      <div class="product"><img src="ceramic plate.jpg" width="190px" height="200px"><p>Ceramic Plates & Cups</p></div>
+      <div class="product"><img src="plastics.jpg" width="190px" height="200px"><p>Plastic Items</p></div>
+      <div class="product"><img src="broom.jpg" width="190px" height="200px"><p>Mop and broom</p></div>
+      <div class="product"><img src="spoon.jpg" width="190px" height="200px"><p>Nonstick spoon</p></div>
+      <div class="product"><img src="rack.webp" width="190px" height="200px"><p>plate racks</p></div>
+      <div class="product"><img src="gold spoon.jpg" width="190px" height="200px"><p>Gold spoon and folk</p></div>
+      <div class="product"><img src="standing.jpg" width="190px" height="200px"><p>Standing cookers</p></div>
+      <div class="product"><img src="knife.jpg" width="190px" height="200px"><p>knife set</p></div>
+      <div class="product"><img src="pan.jpg" width="190px" height="200px"><p>frying pans</p></div>
+    </span>
+  </div>
+  
+  </section>
+
+<div class="move">
+  <p>
+    Welcome to Agu Nigeria Enterprise
+
+At Agu Global Enterprise, we are your trusted destination for high quality kitchen utensils, home appliances, and household essentials. We proudly serve both wholesale and retail customers, offering unbeatable prices without compromising on quality.
+
+Our products are carefully selected to ensure they are durable, reliable, efficient, and affordable. We understand that every home and business deserves dependable products, which is why we make quality our top priority.
+s
+
+<p>What We Offer</p>
+
+We stock a wide range of products including:
+
+Non-stick pots and tower pots,
+
+Gas cookers and gas cylinders,
+
+Electric cookers
+
+Blenders and yam pounders,
+
+Air fryers and microwaves,
+
+Dinner sets, ceramic plates and cups,
+
+Plastics and kitchen accessories,
+
+Mops, brooms, hard brushes, and many more household essentials
+
+Whether you are buying in bulk for resale or shopping for your home, Agu Global Enterprise guarantees competitive wholesale prices and excellent retail deals.
+
+<p>Why Choose Us?</p>
+<div>
+  
+<P>✔ High-quality and long-lasting products</P>
+<p>✔ Affordable prices for everyone </p>
+<p>✔ Wholesale and retail availability</p>
+<p>✔ Trusted and reliable service </p>
+<p>✔ Customer satisfaction guaranteed</p>
+</div>
+
+<P>At Agu Nigeria Enterprise, we believe that good quality should be accessible to all. Our mission is to provide products that make your home comfortable and your business profitable.</P>
+
+
+Come and patronize us today and experience quality you can trust at prices you will love.
+  </p>
+</div>
+
+
+<p>
+“Commit your work to the Lord, and your plans will be established.” – Proverbs 16:3</p>
+
+  <button onclick="topFunction()" id="backToTop">↑ Back to Top</button>
+
+  <script src="script.js"></script>
+
+ <script>
+  const messages = [
+    "Welcome to Agu Nigeria Enterprise",
+    "We Sell Quality Kitchen Utensils",
+    "Wholesale & Retail Available",
+    "Affordable and Reliable Products"
+  ];
+
+  let index = 0;
+  const text = document.getElementById("text");
+
+  setInterval(() => {
+    // Slide out to left
+    text.style.opacity = 0;
+    text.style.transform = "translateX(-50px)";
+
+    setTimeout(() => {
+      // Change text
+      index = (index + 1) % messages.length;
+      text.textContent = messages[index];
+
+      // Slide in from right
+      text.style.transform = "translateX(50px)";
+
+      setTimeout(() => {
+        text.style.opacity = 1;
+        text.style.transform = "translateX(0)";
+      }, 50);
+
+    }, 600);
+
+  }, 3000);
+</script>
+
+
+
+  </body>
+
+</head>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Agu Nigeria Enterprise. All rights reserved.</p>
+</footer>
+ 
+</html>
